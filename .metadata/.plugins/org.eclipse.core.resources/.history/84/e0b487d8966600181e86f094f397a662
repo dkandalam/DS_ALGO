@@ -1,0 +1,10 @@
+
+public class CLIStackImpl extends StackImpl<Integer>{
+
+	public CLIStackImpl() {
+	// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}

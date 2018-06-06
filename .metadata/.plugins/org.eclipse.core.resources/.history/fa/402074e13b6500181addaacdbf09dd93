@@ -1,0 +1,17 @@
+
+public class StackCliCommandHandler implements CliCommandHandler{
+	
+	public final String INVALID_COMMAND_MSG = "this is a invalid command,please use -h for options";
+	
+	StackImpl<Integer> integerStack = new StackImpl<Integer>();
+	
+	private boolean isValidCommand(final String command) {
+		return command.matches("stack (push|pop [0-9]*)");
+	}
+	
+	@Override
+	public String  processCommand(String command) {
+		if(!isValidCommand(command)) return INVALID_COMMAND_MSG;
+		
+	}
+}

@@ -1,0 +1,6 @@
+
+public class IntegerStack extends StackImpl<Integer>{
+	public static void main(String[] args) {
+		IntegerStack integerStack = new IntegerStack();
+	}
+}

@@ -1,0 +1,4 @@
+
+public interface CliCommandHandler {
+	void processCommand(final String command);
+}

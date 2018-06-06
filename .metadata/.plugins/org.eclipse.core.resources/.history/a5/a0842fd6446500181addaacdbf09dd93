@@ -1,0 +1,49 @@
+import java.lang.reflect.Method;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class StackCliCommandHandler implements CliCommandHandler{
+	
+	public final String INVALID_COMMAND_MSG = "this is a invalid command,please use -h for options";
+	private final String commandPattern = "stack\\s\\w+\\s*\\d*";
+	
+	
+	StackImpl<Integer> integerStack = new StackImpl<Integer>();
+	
+	private boolean isValidCommand(final String command) {
+		return command.matches(commandPattern);
+	}
+	
+	private String convertCommandAndCallAPI(String command) {
+		applyTheCommand(getCommandArguments(command));
+	}
+	
+	private String[] getCommandArguments(String command) {
+		return command.split("\\s");
+	}
+	
+	private void applyTheCommand(String[] commandArgs) {
+		final String method = commandArgs[1];
+		
+	}
+	
+	private Method validateInArgsToAPI(String[] commandArgs) {
+		Method[] methods = StackImpl.class.getDeclaredMethods();
+		
+		for(Method method : methods) {
+			method.
+		}//for
+		
+	}
+	
+	@Override
+	public String  processCommand(String command) {
+		if(!isValidCommand(command)) 
+			return INVALID_COMMAND_MSG;
+		else
+			
+			
+	}
+	
+	
+}

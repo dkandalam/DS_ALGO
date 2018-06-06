@@ -1,0 +1,7 @@
+
+public class DoublePointerLinkedList<T> {
+	
+	private class Node<T>{
+		
+	}
+}

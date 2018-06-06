@@ -1,0 +1,7 @@
+
+public class IntegerLinkedList {
+	public static void main(String[] args) {
+		LinkedList<Integer> integerlinkedList = new LinkedList<Integer>();
+		
+	}
+}

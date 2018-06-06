@@ -1,0 +1,36 @@
+
+public class LinkedList<T> {
+
+	private class Node<T>
+	{
+		
+		public Node(T value) {
+			// TODO Auto-generated constructor stub
+		}
+		T value;
+		Node<T> next;
+		public boolean hasNext() {
+			return next!=null;
+		}
+	}
+	
+	private Node<T> getInstance(T object){
+		return new Node<T()
+	}
+	
+	private Node<T> root;
+	public void add(T value) {
+		if(root == null) {
+			root = new Node<T>();
+			root.value = value;
+		}else {
+			Node<T> node = root;
+			while(node.hasNext()) {
+				node = node.next;
+			}//while end.
+			node.next = new Node<T>();
+			
+		}
+	
+	}
+}

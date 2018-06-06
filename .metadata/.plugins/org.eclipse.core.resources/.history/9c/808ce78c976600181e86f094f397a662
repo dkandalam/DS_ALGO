@@ -1,0 +1,20 @@
+
+public class DoublePointerLinkedList<T> extends SinglePointerLinkedList<T>{
+	
+	private class Node<T>{
+		T value;
+		Node<T> next;
+	}
+	private Node<T> head;
+	private Node<T> tail;
+	
+	public void addToHead(T value) {
+		if(head == null)
+		else
+			
+	}
+	
+	public void addToTail(T value) {
+		
+	}
+}

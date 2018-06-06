@@ -1,0 +1,22 @@
+import java.lang.reflect.Method;
+
+public class ReflectionHelper {
+	public static Method getMethod(String methodName,Class  classInstance) throws IllegalArgumentException {
+			Method[] methods = classInstance.getDeclaredMethods();
+		
+		for(Method method : methods) {
+			final String _methodName = method.getName();
+			if(_methodName.equals(methodName)) return method;
+		}//for
+		throw new IllegalArgumentException("method name not exist");
+	}
+	
+	public static void validateMethodParameterType(Method method,Class[] commandParamType) {
+		Class[] classParamTypes = method.getParameterTypes();
+		for(int i=0;i<classParamTypes.length;i++) {
+			if(!classParamTypes[i].equals(commandParamType[i])) throw new IllegalArgumentException("Un Supported Arguments");
+		}//for end.
+		
+	}
+	
+}

@@ -1,0 +1,10 @@
+
+public class DoublePointerLinkedList<T> {
+	
+	private class Node<T>{
+		T value;
+		Node<T> next;
+	}
+	private Node<T> head;
+	private Node<T> tail;
+}

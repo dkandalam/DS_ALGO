@@ -1,0 +1,16 @@
+public class StringStack extends StackImpl<String>{
+	
+
+	public static void main(String[] args){
+		Stack<String> stringStack = new StringStack();
+		stringStack.push("this");
+		stringStack.push("is");
+		stringStack.push("my");
+		stringStack.push("sample ");
+		stringStack.push("testing");
+		while(stringStack.size() > 0) {
+			System.out.println(stringStack.pop());
+		}
+		System.out.println(stringStack.peek());
+	}
+}

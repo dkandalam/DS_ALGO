@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class CliReader{
+	
+	private final String commandPattern = "stack\\s\\w+\\s*\\d*";
+	Scanner cliScanner;
+	
+	public CliReader() {
+		cliScanner  = new Scanner(System.in);
+	}
+	
+	private  String  readFromCLI() {
+		final String command = cliScanner.nextLine();
+		return command;
+	}
+	
+	
+	public void handlerForCliReader() {
+		
+	}
+	
+	public static void main(String[] args) {
+		final String pattern = 
+		System.out.println("stack test".matches(pattern));
+		System.out.println("stack pop 2".matches(pattern));
+		System.out.println("stack size".matches(pattern));
+		System.out.println("stack toString".matches(pattern));
+	}
+}

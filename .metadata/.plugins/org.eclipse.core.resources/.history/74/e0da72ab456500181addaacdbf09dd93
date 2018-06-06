@@ -1,0 +1,12 @@
+import java.lang.reflect.Method;
+
+public class ReflectionHelper {
+	public static Method getMethod(String methodName,Class  classInstance) {
+			Method[] methods = StackImpl.class.getDeclaredMethods();
+		
+		for(Method method : methods) {
+			final String methodName = method.getName();
+			if()
+		}//for
+	}
+}

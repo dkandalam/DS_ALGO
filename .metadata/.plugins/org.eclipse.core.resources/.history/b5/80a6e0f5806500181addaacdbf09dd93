@@ -1,0 +1,15 @@
+
+public class LinkedList<T> {
+
+	private class Node<T>
+	{
+		T value;
+		Node<T> next;
+	}
+	
+	private Node<T> root;
+	public void add(T value) {
+		Node<T> node = this.root;
+		
+	}
+}
